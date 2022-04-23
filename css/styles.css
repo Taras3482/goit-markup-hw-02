@@ -8,6 +8,7 @@
   --list-link-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --portfolio-background: #f5f4fa;
+  --footer-background: #2f303a;
 }
 
 .link {
@@ -36,6 +37,15 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color-theme-dark);
 }
 
 /* ============= HEADER ============= */
@@ -121,27 +131,10 @@ body {
 /* ========== /our-qualities ========== */
 
 /* =========== What we doing ============ */
-.we-work {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
 
-  color: var(--primary-text-color-theme-dark);
-}
 /* =========== /What we doing ============ */
 
 /* =========== Our Team ============ */
-.our-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17x;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color-theme-dark);
-}
-
 .name-team {
   font-weight: 500;
   font-size: 16px;
@@ -162,6 +155,9 @@ body {
 
 /* ============= FOOTER ============= */
 
+.footer {
+  background: var(--footer-background);
+}
 .contact-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -174,6 +170,7 @@ body {
 .contact-list-link:focus {
   color: var(--accent-color);
 }
+
 /* ============= /FOOTER ============= */
 
 /* =================== PORFOLIO =================== */
