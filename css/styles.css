@@ -1,4 +1,5 @@
 :root {
+  /* --main-color: #E5E5E5; */
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
   --primary-text-color-theme-dark: #212121;
@@ -8,7 +9,8 @@
   --list-link-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --portfolio-background: #f5f4fa;
-  --footer-background: #2f303a;
+  --color-background: #2f303a;
+  --hero-btn-background: #188ce8;
 }
 
 .link {
@@ -21,7 +23,12 @@
 
 body {
   font-family: var(--primary-font-family);
+  font-style: normal;
+  font-size: 14px;
+  color: var(--primary-text-color-theme-light);
+  background: var(--secondary-text-color-theme-dark);
 }
+
 .studio-header {
   color: var(--primary-text-color-theme-dark);
 }
@@ -51,40 +58,53 @@ body {
 /* ============= HEADER ============= */
 .menu-link {
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
 }
 .menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
-.contact-phone-number {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-light);
-}
+.menu-link:focus,
 .contact-phone-number:hover,
 .contact-phone-number:focus {
   color: var(--accent-color);
 }
-.contact-mail {
+.active-button {
+  color: var(--accent-color);
+}
+
+.contact-phone-number {
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-light);
+  color: inherit;
+}
+
+.contact-mail {
+  font-weight: 500;
+  /* font-size: 14px; */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
 }
 .contact-mail:hover,
 .contact-mail:focus {
   color: var(--accent-color);
 }
+.contact-list {
+  font-weight: 400;
+  /* font-size: 14px; */
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
 /* ============= /HEADER ============= */
 
 /* ============= HERO ============= */
+.hero {
+  background: var(--color-background);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -92,7 +112,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
 }
 .hero-btn {
   font-weight: 700;
@@ -109,13 +129,14 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--secondary-text-color-theme-dark);
+  background-color: var(--hero-btn-background);
 }
 /* ============= /HERO ============= */
 
 /* ========== our-qualities ========== */
 .description {
   font-weight: 700;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -123,10 +144,9 @@ body {
 }
 .section {
   font-weight: 400;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color-theme-light);
 }
 /* ========== /our-qualities ========== */
 
@@ -135,6 +155,12 @@ body {
 /* =========== /What we doing ============ */
 
 /* =========== Our Team ============ */
+.our-team {
+  background: var(--portfolio-background);
+}
+.list-our-team {
+  background: var(--secondary-text-color-theme-dark);
+}
 .name-team {
   font-weight: 500;
   font-size: 16px;
@@ -149,26 +175,25 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color-theme-light);
 }
 /* =========== /Our Team ============ */
 
 /* ============= FOOTER ============= */
 
 .footer {
-  background: var(--footer-background);
+  background: var(--color-background);
 }
-.contact-list-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: var(--list-link-color);
+.contact-list-adress {
+  color: var(--secondary-text-color-theme-dark);
 }
+.contact-list-adress:hover,
+.contact-list-adress:focus,
 .contact-list-link:hover,
 .contact-list-link:focus {
   color: var(--accent-color);
+}
+.contact-list-link {
+  color: var(--list-link-color);
 }
 
 /* ============= /FOOTER ============= */
@@ -176,6 +201,7 @@ body {
 /* =================== PORFOLIO =================== */
 
 .portfolio-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -194,7 +220,6 @@ body {
   color: var(--secondary-text-color-theme-dark);
 }
 
-/* ======== Our Projects Portfolio =========> */
 .project-tipe {
   font-weight: 700;
   font-size: 18px;
@@ -208,6 +233,4 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-
-  color: var(--primary-text-color-theme-light);
 }
